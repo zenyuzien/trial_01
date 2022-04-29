@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>forms_in_html</title>
+  </head>
+  <body>
+
+<!--                    //basic form structure
+
+<form>
+  <label>name</label>
+<input>
+<label>password</label>
+<input>
+  </form>
+
+-->
+
+<!--                     // just added divisons and submit button
+<form>
+  <div>
+  <label>name</label>
+<input>
+</div>
+<div>
+<label>password</label>
+<input>
+</div>
+  <button>submit</button>
+  </form>
+  -->
+
+  <!--                                          //action and method
+  <form action="trial.html" method="GET">
+    <div>
+    <label>name</label>
+  <input>
+  </div>
+  <div>
+  <label>password</label>
+  <input>
+  </div>
+  <button>submit</button>
+    </form>
+    -->
+
+    <!-- some clarity+ appends in url  , unique_id which redirects highlight to input when clicked on label, 2nd method used in password, simply include <input> inside label
+    <form action="trial.html" method="GET">
+      <div>
+      <label for="unique_id">name</label>
+    <input name="name" id = "unique_id">
+    </div>
+    <div>
+    <label>password
+    <input name= "password">
+    </label>
+    </div>
+    <button>submit</button>
+      </form>
+
+-->
+<!--
+<form action="trial.html" method="GET">
+  <div>
+  <label for="unique_id">name</label>
+<input name="name" id = "unique_id" value="default text"> //value is default value, defaultyly it is ntg
+</div>
+<div>
+<label>password
+<input type="passsword" name= "password">
+</label>
+</div>
+<button type="submit">submit</button>     // other button types reset, etc
+  </form>
+-->
+
+<form action="trial.html" method="GET">
+
+  <div>
+  <label for="unique_id">name</label>
+<input name="name" id = "unique_id" value="default text">
+</div>
+
+<div>
+  <label>number</label>
+  <input type="number"  value="" min="0" max="200" step="2"> <!-- everything are optional -->
+</div>
+
+<div>
+<label>password
+<input type="password" name= "password" placeholder="password">
+</label>
+</div>
+<!-- many types present, use resources -->
+<div class="">
+
+  deafult printing area
+<div class="">
+  <label for="id002">okay</label>
+  <input type="checkbox" name="" id="id002" value="">
+
+</div>
+<div class="">
+  <label>okay01
+  <input type="checkbox" name="" value=""></label>
+</div>
+</div>
+
+<div class="">
+  GENDER , U CANT PICK MORE THAN 1
+  <label>
+    male
+    <input type="radio" name="same_name" value="">
+  </label>
+  <label>female <input type="radio" name="same_name" value=""></label>
+
+</div>
+
+<div class="">
+  'select' in forms
+  <select class="" name="" <!--multiple--> >
+    <option value="">option001</option>
+    <option value="">opt02</option>
+  </select>
+
+</div>
+
+<div class=""><label for="">text area</label>
+<textarea name="" rows="8" cols="80" placeholder="type here"></textarea>
+</div>
+
+<button type="reset">reset</button>
+<button type="submit">submit</button>
+
+  </form>
+
+
+
+  </body>
+</html>
